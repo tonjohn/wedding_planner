@@ -1,0 +1,14 @@
+{% extends "guest_list/base.html" %}
+
+{% block main_content %}
+<section class="container">
+<form action="" method="post">
+    {% csrf_token %}
+    <table>
+    {{ form.as_table }}
+    </table>
+    <input type="submit" value="Submit" />
+    
+</form>
+</section>
+{% endblock %}
